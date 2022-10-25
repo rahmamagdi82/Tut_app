@@ -36,6 +36,7 @@ class _MainViewState extends State<MainView> {
     return Scaffold(
       appBar: AppBar(
         title: Text(titles[_currentIndex]),
+        automaticallyImplyLeading: false,
       ),
       body: pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(

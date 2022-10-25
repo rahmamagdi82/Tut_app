@@ -97,8 +97,9 @@ class NotificationData{
   int? id;
   String? sender;
   String? message;
+  String? image;
 
-  NotificationData(this.id,this.sender,this.message);
+  NotificationData(this.id,this.sender,this.message,this.image);
 }
 
 class NotificationModel{

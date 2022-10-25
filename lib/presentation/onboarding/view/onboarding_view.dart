@@ -26,7 +26,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   final AppPrefs _appPrefs = instance<AppPrefs>();
   _bind(){
     _viewModel.start();
-    _appPrefs.putData(key: PREFS_KEY_ONBOARDING, value: true);
   }
 
   @override
@@ -71,6 +70,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
               child: TextButton(
                 onPressed: () {
                   Navigator.pushReplacementNamed(context, Routes.loginRoute);
+                  _appPrefs.putData(key: PREFS_KEY_ONBOARDING, value: true);
                 },
                 child: Text(
                   AppStrings.skip.tr(),
@@ -114,6 +114,8 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                     doneLineColor: ColorManager.primary,
                     lineLength: AppSize.s20,
                     selectedStepBorderSize: AppSize.s1, // Custom Widget
+                    unselectedStepSize: AppSize.s12,
+                    selectedStepSize: AppSize.s12,
                   ),
                   IconButton(
                     onPressed: () {
