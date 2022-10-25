@@ -107,6 +107,7 @@ extension NotificationDataResponseMapper on NotificationDataResponse?{
         this?.id.orZero() ?? Constants.zero,
         this?.sender.orEmpty() ?? Constants.empty,
         this?.message.orEmpty() ?? Constants.empty,
+        this?.image.orEmpty() ?? Constants.empty
     );
   }
 }

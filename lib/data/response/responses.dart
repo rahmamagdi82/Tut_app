@@ -1,6 +1,4 @@
 
-import 'dart:developer';
-
 import 'package:json_annotation/json_annotation.dart';
 part 'responses.g.dart';
 
@@ -190,8 +188,10 @@ class NotificationDataResponse{
   String? sender;
   @JsonKey(name:"message")
   String? message;
+  @JsonKey(name:"image")
+  String? image;
 
-  NotificationDataResponse(this.id,this.sender,this.message);
+  NotificationDataResponse(this.id,this.sender,this.message,this.image);
 
   factory NotificationDataResponse.fromJson(Map<String,dynamic> json)=> _$NotificationDataResponseFromJson(json);
 

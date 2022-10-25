@@ -211,6 +211,7 @@ NotificationDataResponse _$NotificationDataResponseFromJson(
       json['id'] as int?,
       json['sender'] as String?,
       json['message'] as String?,
+      json['image'] as String?,
     );
 
 Map<String, dynamic> _$NotificationDataResponseToJson(
@@ -219,4 +220,5 @@ Map<String, dynamic> _$NotificationDataResponseToJson(
       'id': instance.id,
       'sender': instance.sender,
       'message': instance.message,
+      'image': instance.image,
     };

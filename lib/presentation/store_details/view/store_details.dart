@@ -54,7 +54,7 @@ class _StoreDetailsViewState extends State<StoreDetailsView> {
     return SingleChildScrollView(
       physics: const BouncingScrollPhysics(),
       child: Padding(
-        padding: const EdgeInsets.all(AppSize.s16),
+        padding: const EdgeInsets.all(AppPadding.p16),
         child: StreamBuilder<StoreObject>(
           stream: _viewModel.outputStoreDetails,
           builder: (context, snapshot) {
@@ -92,7 +92,7 @@ class _StoreDetailsViewState extends State<StoreDetailsView> {
 
   Widget _getSectionWidget(String title) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: AppSize.s8,top: AppSize.s20),
+      padding: const EdgeInsets.only(bottom: AppPadding.p8,top: AppPadding.p20),
       child: Text(
         title,
         style: Theme.of(context).textTheme.displaySmall,
