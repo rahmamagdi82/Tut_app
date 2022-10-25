@@ -24,7 +24,7 @@ class DioFactory {
     Map<String, String> headers = {
       CONTENT_TYPE: APPLICATION_JSON,
       ACCEPT: APPLICATION_JSON,
-      AUTHORIZATION: "abcd@gmail.com",
+      AUTHORIZATION: Constants.token,
       DEFAULT_LANGUAGE: language
     };
 

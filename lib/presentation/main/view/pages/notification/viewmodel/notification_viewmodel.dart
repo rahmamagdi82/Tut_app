@@ -11,8 +11,6 @@ import '../../../../../common/state_renderer/state_renderer.dart';
 class NotificationViewModel extends BaseViewModel with NotificationViewModelInput,NotificationViewModelOutput{
 
   final _notificationsStreamController= BehaviorSubject<NotificationModel>();
-  String email="abcd@gmail.com";
-
 
   final NotificationUseCase _notificationUseCase;
   NotificationViewModel(this._notificationUseCase);
