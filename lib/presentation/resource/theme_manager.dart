@@ -101,7 +101,9 @@ ThemeData getApplicationTheme(){
         focusedErrorBorder: OutlineInputBorder(
             borderSide:
             BorderSide(color: ColorManager.primary, width: AppSize.s1_5),
-            borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8)))),
+            borderRadius: const BorderRadius.all(Radius.circular(AppSize.s8))),
+
+    ),
 
     // bottom sheet style
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -109,7 +111,11 @@ ThemeData getApplicationTheme(){
       selectedItemColor:ColorManager.primary,
       unselectedItemColor: ColorManager.lightGrey
     ),
+
+
+    textSelectionTheme: TextSelectionThemeData(
+      cursorColor: ColorManager.primary,
+    ),
+
     );
-
-
 }
